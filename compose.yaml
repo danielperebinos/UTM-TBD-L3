@@ -18,8 +18,8 @@ services:
       - spark-master
 
   pyspark-app:
-    build: ./spark
     container_name: pyspark-app
+    build: .
     depends_on:
       - spark-master
     environment:
